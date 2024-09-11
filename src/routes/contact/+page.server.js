@@ -1,5 +1,4 @@
 // @ts-nocheck
-
 import { GOOGLE_EMAIL, RECEIVER_EMAIL_ADDRESS } from '$env/static/private';
 import transporter from '$lib/emailSetup';
 import { contact_info } from '../../store';

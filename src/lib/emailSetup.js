@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-// import { GOOGLE_EMAIL,GOOGLE_EMAIL_PASSWORD } from "$env/static/private"
+import { GOOGLE_EMAIL,GOOGLE_EMAIL_PASSWORD } from "$env/static/private"
 import nodemailer from 'nodemailer';
 import { writable } from 'svelte/store';
 // export let options_v2 = writable()

@@ -1,6 +1,6 @@
 <script>
 	import { error } from '@sveltejs/kit';
-	import transporter from '$lib/emailSetup';
+	// import transporter from '$lib/emailSetup';
 	// @ts-ignore
 	import { products } from '../app';
 	// @ts-ignore
@@ -30,26 +30,26 @@
 	// });
 	const successMessage = writable('');
 	const errorMessage = writable('');
-	const handleSubmit = async () => {
-		try {
-			const formDataObject = $contact_info;
-			const jsonData = JSON.stringify(formDataObject);
+	// const handleSubmit = async () => {
+	// 	try {
+	// 		const formDataObject = $contact_info;
+	// 		const jsonData = JSON.stringify(formDataObject);
 
-			// You can now use jsonData in your fetch or send it to the server as needed
-			console.log('JSON Data:', jsonData);
-			// await createSchool(jsonData);
-			transporter.sendEmail();
-			// await transporter.sendEmail()
-			successMessage.set('User created successfullya');
+	// 		// You can now use jsonData in your fetch or send it to the server as needed
+	// 		console.log('JSON Data:', jsonData);
+	// 		// await createSchool(jsonData);
+	// 		// transporter.sendEmail();
+	// 		// await transporter.sendEmail()
+	// 		successMessage.set('User created successfullya');
 
-			setTimeout(() => {
-				successMessage.set('');
-				// window.location.reload();
-			}, 1000);
-		} catch (error) {
-			// errorMessage.set(`Error submitting form: ${error.message}`);
-		}
-	};
+	// 		setTimeout(() => {
+	// 			successMessage.set('');
+	// 			// window.location.reload();
+	// 		}, 1000);
+	// 	} catch (error) {
+	// 		// errorMessage.set(`Error submitting form: ${error.message}`);
+	// 	}
+	// };
 	function loggg() {
 		console.log(category_list);
 		console.log(contact_info);
@@ -196,7 +196,7 @@
 							</div>
 						</div>
 						<div class="btn-wrapper">
-							<button class="submit-btn" on:click={handleSubmit}> Submit </button>
+							<button class="submit-btn"> Submit </button>
 						</div>
 					</div>
 				</form>
