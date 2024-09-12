@@ -3,6 +3,10 @@
 	// import transporter from '$lib/emailSetup';
 	// @ts-ignore
 	import { products } from '../app';
+
+	// @ts-ignore
+	import { company_details } from '../app';
+
 	// @ts-ignore
 	import { categories } from '../app';
 	// const rt = new transporter();
@@ -57,6 +61,163 @@
 	}
 </script>
 
+<div class="contact_us_green">
+	<div class="responsive-container-block big-container">
+		<div class="responsive-container-block container">
+			<div
+				class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line"
+				id="i69b-2"
+			>
+				<form method="POST" action="?/sendEmail" class="form-box">
+					<div class="container-block form-wrapper">
+						<div class="head-text-box">
+							<p class="text-blk contactus-head">İletişime Geç</p>
+							<p class="text-blk contactus-subhead">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna al iqua. Ut enim
+							</p>
+						</div>
+						<div class="responsive-container-block">
+							<div
+								class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6"
+								id="i10mt-6"
+							>
+								<p class="text-blk input-title">AD</p>
+								<input
+									class="input"
+									id="ijowk-6"
+									bind:value={$contact_info.name}
+									name="FirstName"
+								/>
+							</div>
+							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+								<p class="text-blk input-title">SOYAD</p>
+								<input
+									class="input"
+									id="indfi-4"
+									bind:value={$contact_info.surname}
+									name="Last Name"
+								/>
+							</div>
+							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+								<p class="text-blk input-title">EMAIL</p>
+								<input class="input" id="ipmgh-6" bind:value={$contact_info.email} name="Email" />
+							</div>
+							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+								<p class="text-blk input-title">İLETİŞİM NO</p>
+								<input
+									class="input"
+									id="imgis-5"
+									bind:value={$contact_info.no}
+									name="PhoneNumber"
+								/>
+							</div>
+							<div
+								class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+								id="i634i-6"
+							>
+								<p class="text-blk input-title">MESAJINIZI YAZINIZ</p>
+								<!-- <input class="input" id="i5vyy-6" bind:value={contact_info.detail} placeholder="Bilgi Almak Istediginiz Urunler..."/> -->
+
+								<textarea
+									class="textinput"
+									id="i5vyy-6"
+									bind:value={$contact_info.detail}
+									placeholder="Bilgi Almak Istediginiz Urunler..."
+								>
+								</textarea>
+							</div>
+						</div>
+						<div class="btn-wrapper">
+							<button class="submit-btn"> Submit </button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
+				<div class="container-box">
+					<div class="text-content">
+						<p class="text-blk contactus-head">İletişime Geç</p>
+						<p class="text-blk contactus-subhead">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna al iqua. Ut enim
+						</p>
+						
+						<p class="text-blk contactus-head">Çalışma Saatleri</p>
+						<ul>
+							{#each company_details.workHours as workHour}
+								<li class="text-blk contactus-subhead">{workHour.day}: {workHour.hours}</li>
+							{/each}
+						</ul>
+					</div>
+					<div class="workik-contact-bigbox">
+						<div class="workik-contact-box">
+							<div class="phone text-box">
+								<img
+									class="contact-svg"
+									alt="info"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg"
+								/>
+								<p class="contact-text">{company_details.phone}</p>
+							</div>
+							<div class="address text-box">
+								<img
+									class="contact-svg"
+									alt="info"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg"
+								/>
+								<p class="contact-text">{company_details.email}</p>
+							</div>
+							<div class="mail text-box">
+								<img
+									alt="info"
+									class="contact-svg"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg"
+									
+								/>
+								<p class="contact-text">{company_details.address}</p>
+							</div>
+						</div>
+						<div class="social-media-links">
+							<a href="/">
+								<img
+									alt="info"
+									class="social-svg"
+									id="is9ym"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+								/>
+							</a>
+							<a href="/">
+								<img
+									alt="info"
+									class="social-svg"
+									id="i706n"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+								/>
+							</a>
+							<a href="/">
+								<img
+									alt="info"
+									class="social-svg"
+									id="ib9ve"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
+								/>
+							</a>
+							<a href="/">
+								<img
+									alt="info"
+									class="social-svg"
+									id="ie9fx"
+									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="pick_categories">
 	<div class="border border-gray-200" style="background-color: var(--color-theme-1); color: white;">
 		<p>Kategori Listesi</p>
@@ -126,156 +287,6 @@
 			{flavour}
 		</label>
 	{/each} -->
-</div>
-
-<div class="contact_us_green">
-	<div class="responsive-container-block big-container">
-		<div class="responsive-container-block container">
-			<div
-				class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line"
-				id="i69b-2"
-			>
-				<form method="POST" action="?/sendEmail" class="form-box" >
-					<div class="container-block form-wrapper">
-						<div class="head-text-box">
-							<p class="text-blk contactus-head">Contact us</p>
-							<p class="text-blk contactus-subhead">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna al iqua. Ut enim
-							</p>
-						</div>
-						<div class="responsive-container-block">
-							<div
-								class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6"
-								id="i10mt-6"
-							>
-								<p class="text-blk input-title">AD</p>
-								<input
-									class="input"
-									id="ijowk-6"
-									bind:value={$contact_info.name}
-									name="FirstName"
-								/>
-							</div>
-							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-								<p class="text-blk input-title">SOYAD</p>
-								<input
-									class="input"
-									id="indfi-4"
-									bind:value={$contact_info.surname}
-									name="Last Name"
-								/>
-							</div>
-							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-								<p class="text-blk input-title">EMAIL</p>
-								<input class="input" id="ipmgh-6" bind:value={$contact_info.email} name="Email" />
-							</div>
-							<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-								<p class="text-blk input-title">ILETISIM NO</p>
-								<input
-									class="input"
-									id="imgis-5"
-									bind:value={$contact_info.no}
-									name="PhoneNumber"
-								/>
-							</div>
-							<div
-								class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
-								id="i634i-6"
-							>
-								<p class="text-blk input-title">BILGI TALEBI FORMU</p>
-								<!-- <input class="input" id="i5vyy-6" bind:value={contact_info.detail} placeholder="Bilgi Almak Istediginiz Urunler..."/> -->
-
-								<textarea
-									class="textinput"
-									id="i5vyy-6"
-									bind:value={$contact_info.detail}
-									placeholder="Bilgi Almak Istediginiz Urunler..."
-								>
-								</textarea>
-							</div>
-						</div>
-						<div class="btn-wrapper">
-							<button class="submit-btn"> Submit </button>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
-				<div class="container-box">
-					<div class="text-content">
-						<p class="text-blk contactus-head">Contact us</p>
-						<p class="text-blk contactus-subhead">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna al iqua. Ut enim
-						</p>
-					</div>
-					<div class="workik-contact-bigbox">
-						<div class="workik-contact-box">
-							<div class="phone text-box">
-								<img
-									class="contact-svg"
-									alt="info"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg"
-								/>
-								<p class="contact-text">+1258 3258 5679</p>
-							</div>
-							<div class="address text-box">
-								<img
-									class="contact-svg"
-									alt="info"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg"
-								/>
-								<p class="contact-text">hello@workik.com</p>
-							</div>
-							<div class="mail text-box">
-								<img
-									alt="info"
-									class="contact-svg"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg"
-								/>
-								<p class="contact-text">102 street, y cross 485656</p>
-							</div>
-						</div>
-						<div class="social-media-links">
-							<a href="/">
-								<img
-									alt="info"
-									class="social-svg"
-									id="is9ym"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
-								/>
-							</a>
-							<a href="/">
-								<img
-									alt="info"
-									class="social-svg"
-									id="i706n"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
-								/>
-							</a>
-							<a href="/">
-								<img
-									alt="info"
-									class="social-svg"
-									id="ib9ve"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-								/>
-							</a>
-							<a href="/">
-								<img
-									alt="info"
-									class="social-svg"
-									id="ie9fx"
-									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-								/>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
 
 <style>

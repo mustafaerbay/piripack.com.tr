@@ -8,13 +8,13 @@
 
 <!-- <div> -->
 <div id="category"
-	class="max-w-sm bg-white dark:bg-gray-800 dark:border-gray-700 relative"
+	class="rounded-md hover:rounded-3xl max-w-sm bg-white dark:bg-gray-800 dark:border-gray-700 relative"
 >
 <!-- <div id="category"
 	class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
 > -->
 	<a href="#">
-		<img class="rounded-t-lg" style="display=inline-block;" src={url} alt="" />
+		<img class="rounded-md hover:rounded-3xl" style="display=inline-block;" src={url} alt="" />
 	</a>
 	<div class="p-5">
 		<a href="/contact">

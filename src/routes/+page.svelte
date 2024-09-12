@@ -24,9 +24,9 @@
 </svelte:head>
 
 <Gallery class="gap-4 grid-cols-3 " items={images} let:item>
-	<div class="rounded-md ">
+	<div class="rounded-md">
 	<!-- <div class="rounded-md ring-1 ring-green-600 dark:ring-red-400 p-1"> -->
-		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:rounded-full hover:shadow-2xl" />
+		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:hover:rounded-3xl hover:shadow-3xl" />
 	</div>
 </Gallery>
 <div class="pt-4 pb-4" style="max-w-7xl">

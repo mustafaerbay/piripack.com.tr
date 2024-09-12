@@ -26,7 +26,7 @@
 		<NavUl class="order-1">
 			<NavLi href="/" active={true}>Anasayfa</NavLi>
 			<NavLi href="/about">Hakkımızda</NavLi>
-			<NavLi href="/products">Urunler</NavLi>
+			<NavLi href="/products">Ürünler</NavLi>
 			<NavLi href="/categories">Kategoriler</NavLi>
 		</NavUl>
 	</Navbar>
