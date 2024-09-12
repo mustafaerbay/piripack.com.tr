@@ -20,9 +20,10 @@
 	}
 </script>
 
+<!-- TODO: fix gradiant button links -->
 <footer class="flex flex-row justify-center space-evenly">
 	<GradientButton color="green" on:click={openWhatsapp}>Whatsapp +123456789</GradientButton>
-	<GradientButton color="green">Mail: info@piripack.com.tr</GradientButton>
+	<GradientButton color="green"></GradientButton>
 	<GradientButton color="green">Iletisim No +90342 321 32 21</GradientButton>
 	<!-- <SpeedDialButton name="Email" href="/contact">
         <ShareNodesSolid class="w-6 h-6" />
