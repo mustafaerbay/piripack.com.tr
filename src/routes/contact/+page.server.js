@@ -33,6 +33,7 @@ export const actions = {
                 })
             }
             await sendEmail(message)
+            await postmarkapp_send_email(message)
             // İşlem yap (veritabanına kaydet, e-posta gönder vs.)
 
             return {

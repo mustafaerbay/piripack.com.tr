@@ -1,33 +1,36 @@
 <script>
-	import { Gallery, ImagePlaceholder } from 'flowbite-svelte';
+	import { Gallery, Heading, Img, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
 
 </script>
-
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
-
-
-<br />
-<div >
-	
-	<h1>About this app</h1>
-
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-</div>
-
-<style>
-</style>
+<Img src="images/contact_image.webp"></Img>
+<P class="mb-3" color="text-gray-500 dark:text-gray-400" firstupper
+	>PİRİPACK AMBALAJ Gaziantep 5. Organize Sanayi Bölgesinde <Span underline>30000 m2</Span> kapalı alanda
+	üretimini gerçekleştirmekte olup
+</P>
+<P class="mb-3" color="text-gray-500 dark:text-gray-400">
+	<List tag="ul" class="space-y-1 text-gray-500 dark:text-gray-400">
+		<Li>Sıvı dolum</Li>
+		<Li>Konsantre İçecek ambalajları</Li>
+		<Li>Şekerleme</Li>
+		<Li>Bakliyat</Li>
+		<Li>Dondurulmus Gida ve Dondurma</Li>
+		<Li>Kuru Kahve</Li>
+		<Li>Kuruyemis</Li>
+		<Li>Toz icecek</Li>
+	</List>
+	gibi <b>esnek gıda ambalajları</b>, Hijyen Ürünleri, ve her türlü temizlik gurubu ürünlerinin
+	ambalaj üretimini modern tesislerinde 4.0 Endüstri ile gerçekleştirmektedir.
+</P>
+<P class="mb-3" color="text-gray-500 dark:text-gray-400">
+	Markamızdan aldığımız, İlhamdan yola çıkarak yaptığım işin temizini ve en iyisini nitelikli hale
+	getirmek ve Dünya çapında bir yer edinmek için karar aldığımız ve üreticiden tüketiciye kadar
+	evrensel ve çevreci anlayışla işimizi yapmak bitmeyecek tutkumuzdur. Dünya standartlarında bir
+	işletmecilikle gelişen teknolojileri takip ederek ve uyum sağlayarak gelişimimize devam edeceğiz.
+</P>
+<P class="mb-3" color="text-gray-500 dark:text-gray-400"
+	>Problemleri ve olumsuzlukları cesaretle göğüsleyerek çözümleyici yaklaşımlar aramak temel
+	amacımız ve hedefimiz olacaktır. Bu bağlamda <b>PİRİPACK</b>
+	olarak hedefimiz yenilenebilir enerjilerle, doğal kaynaklara zarar vermeden
+	<Span underline>%100</Span> geri dönüştürülebilen üretim yapmak ve yarınlara daha faydalı bir temiz
+	bir dünya bırakmak olacaktır.</P
+>

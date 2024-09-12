@@ -12,9 +12,12 @@
 	import Maps from '$lib/Maps.svelte';
 	import CustomContact from '$lib/CustomContact.svelte';
 	import Contact from '$lib/Contact.svelte';
+	import NavbarSide from '$lib/Navbar_side.svelte';
 </script>
 
-<div class="app">
+<!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
+<!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
+<div class="app bg-gradient-to-r from-green-100 to-green-300">
 	<!-- <Header /> -->
 
 	<Nav></Nav>
@@ -25,10 +28,9 @@
 		<!-- <Maps></Maps> -->
 		<!-- <CustomContact></CustomContact> -->
 	</main>
+	<!-- <NavbarSide></NavbarSide> -->
 	<SpeedDialButton></SpeedDialButton>
-	<footer>
-		<p>Piri Pack Ambalaj</p>
-	</footer>
+	
 	<Foot></Foot>
 </div>
 
@@ -54,15 +56,7 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-		background-color: var(--color-theme-1);
-		color: white;
-	}
+	
 
 	/* footer a {
 		font-weight: bold;

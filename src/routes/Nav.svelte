@@ -8,9 +8,7 @@
 		ImagePlaceholder,
 		Skeleton,
 		TextPlaceholder,
-
 		Button
-
 	} from 'flowbite-svelte';
 </script>
 
@@ -18,19 +16,18 @@
 	<Navbar class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
 		<NavBrand href="/">
 			<img src="images/logo.png" class="me-3 h-6 sm:h-9" alt="PiriPack Logo" />
-			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-				>PiriPack</span
-			>
+			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"></span>
 		</NavBrand>
 		<div class="flex md:order-2">
 			<Button size="sm" color="primary" href="/contact">İletişim</Button>
-            <!-- <p>+90 555 123 12 34</p> -->
+			<!-- <p>+90 555 123 12 34</p> -->
 			<NavHamburger />
 		</div>
 		<NavUl class="order-1">
 			<NavLi href="/" active={true}>Anasayfa</NavLi>
 			<NavLi href="/about">Hakkımızda</NavLi>
-			<NavLi href="/products">Kategoriler</NavLi>
+			<NavLi href="/products">Urunler</NavLi>
+			<NavLi href="/categories">Kategoriler</NavLi>
 		</NavUl>
 	</Navbar>
 	<!-- <div style="height:300px;" class="overflow-scroll pb-16">

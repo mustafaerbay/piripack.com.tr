@@ -17,6 +17,28 @@ const contact_info = {
     "no": "",
     "detail": ""
 }
+export const links = [
+    {
+        "name": "Anasayfa",
+        "url": "/",
+        "is_active": true
+    },
+    {
+        "name": "Hakkımızda",
+        "url": "/about",
+        "is_active": false
+    },
+    {
+        "name": "Kategoriler",
+        "url": "/categories",
+        "is_active": false
+    },
+    {
+        "name": "Ürünler",
+        "url": "/products",
+        "is_active": false
+    },
+]
 const categories = [
     {
         "id": 1,

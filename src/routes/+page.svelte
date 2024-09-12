@@ -1,10 +1,13 @@
 <script>
+// @ts-nocheck
+
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { Gallery, Heading, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
+	import { Carousel, Gallery, Heading, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
 	import AccordionCategory from '$lib/AccordionCategory.svelte';
 	import { BadgeCheckOutline } from 'flowbite-svelte-icons';
+	import Slide from 'flowbite-svelte/Slide.svelte';
 	const images = [
 		{ alt: 'shoes', src: 'images/foto-13.webp' },
 		{ alt: 'small bag', src: 'images/foto-02.webp' },
@@ -20,14 +23,18 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Gallery class="gap-4 grid-cols-3" items={images} let:item>
-	<div class="ring-1 ring-green-600 dark:ring-red-400 p-1">
-		<img src={item.src} alt={item.alt} class="h-auto max-w-full" />
+<Gallery class="gap-4 grid-cols-3 " items={images} let:item>
+	<div class="rounded-md ">
+	<!-- <div class="rounded-md ring-1 ring-green-600 dark:ring-red-400 p-1"> -->
+		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:rounded-full hover:shadow-2xl" />
 	</div>
 </Gallery>
-<hr class="solid" />
+<div class="pt-4 pb-4" style="max-w-7xl">
+	<Carousel {images} duration="3000" />
+  </div>
+<!-- <hr class="solid" />
 <h1>Hakkimizda</h1>
-<hr class="solid" />
+<hr class="solid" /> -->
 <div id="big_header">
 	<Heading
 		tag="h1"
@@ -125,22 +132,6 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 
 	#big_header {
