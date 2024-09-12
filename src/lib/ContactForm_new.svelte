@@ -178,7 +178,7 @@
 								<p class="contact-text">{company_details.address}</p>
 							</div>
 						</div>
-						<div class="social-media-links">
+						<!-- <div class="social-media-links">
 							<a href="/">
 								<img
 									alt="info"
@@ -211,14 +211,14 @@
 									src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
 								/>
 							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="pick_categories">
+<div class="pick_categories hidden">
 	<div class="border border-gray-200" style="background-color: var(--color-theme-1); color: white;">
 		<p>Kategori Listesi</p>
 	</div>

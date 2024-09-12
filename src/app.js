@@ -21,6 +21,11 @@ const company_details = {
         { day: 'Cumartesi', hours: '10:00 - 16:00' },
         { day: 'Pazar', hours: 'Kapalı' }
     ],
+    "socials": [
+        { facebook: '/#' },
+        { instagram: '/#' },
+        { twitter: '/#' }
+    ]
 }
 const contact_info = {
     "name": "",
@@ -29,7 +34,7 @@ const contact_info = {
     "no": "",
     "detail": ""
 }
-export const links = [
+const links = [
     {
         "name": "Anasayfa",
         "url": "/",
@@ -85,7 +90,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli aseptik salca",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -95,7 +100,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli ketcap ve mayonez",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -105,7 +110,7 @@ const products = [
         "price": 199.99,
         "stock": 25,
         "description": "Tahin pekmez paketlerinde devrim",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -115,7 +120,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli konsantre meyve suyu paketi",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -125,7 +130,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "En kaliteli konsantre meyve suyu paketi",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -135,7 +140,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "Her ebatta ADBLUE paketleri",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -145,7 +150,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "SIVI JEL ŞEKERLEMELER",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -155,7 +160,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "MUSLUKLU SIVI AMBALAJLAR",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -165,7 +170,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KURUYEMİŞ VE TOZ İÇECEKLER	",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -175,7 +180,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BAHARAT PAKETLERI",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -185,7 +190,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BAKLIYAT PAKETLERI",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -195,7 +200,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KURU KAHVE",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -205,7 +210,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "CAY PAKETLERI",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -215,7 +220,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "HALI SHRINK",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -225,7 +230,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "HALI SHRINK",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -235,7 +240,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BUZDOLABI POŞETLERİ",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -245,7 +250,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "ZİPLİ FERMUARLI SAKLAMALAMA POŞETLERİ",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -255,7 +260,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KİLİTLİ SAKLAMALAMA POŞETLERİ",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -265,7 +270,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "ÇOK AMAÇLI VAKUMLU AMBALAJLAR",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -275,8 +280,8 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "ÜÇGEN KREMŞANTİ POŞETİ",
-        "image_url": "https://example.com/images/smartphone.jpg",
+        "image_url": "images/foto-04.webp",
         "tags": ["10x15", "15x21"]
     },
 ]
-export { phone, email, whatsapp, workHours, mapUrl, address, categories, products, company_details }
+export { phone, email, whatsapp, workHours, mapUrl, address, categories, products, company_details, links }

@@ -13,6 +13,7 @@
 	import CustomContact from '$lib/CustomContact.svelte';
 	import Contact from '$lib/Contact.svelte';
 	import NavbarSide from '$lib/Navbar_side.svelte';
+	import SocialsSmall from '$lib/Socials_small.svelte';
 </script>
 
 <!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
@@ -21,7 +22,7 @@
 	<!-- <Header /> -->
 
 	<Nav></Nav>
-
+	<SocialsSmall></SocialsSmall>
 	<main>
 		<slot></slot>
 		<!-- <Contact></Contact> -->
@@ -29,7 +30,7 @@
 		<!-- <CustomContact></CustomContact> -->
 	</main>
 	<!-- <NavbarSide></NavbarSide> -->
-	<SpeedDialButton></SpeedDialButton>
+	<!-- <SpeedDialButton></SpeedDialButton> -->
 	
 	<Foot></Foot>
 </div>

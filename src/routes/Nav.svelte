@@ -1,5 +1,7 @@
 <script>
-	import {
+	import Socials from '$lib/Socials.svelte';
+	import SocialsSmall from '$lib/Socials_small.svelte';
+import {
 		Navbar,
 		NavBrand,
 		NavLi,
@@ -20,6 +22,7 @@
 		</NavBrand>
 		<div class="flex md:order-2">
 			<Button size="sm" color="primary" href="/contact">İletişim</Button>
+			
 			<!-- <p>+90 555 123 12 34</p> -->
 			<NavHamburger />
 		</div>
