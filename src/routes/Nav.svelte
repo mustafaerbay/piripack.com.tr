@@ -14,6 +14,7 @@ import {
 	} from 'flowbite-svelte';
 </script>
 
+<!-- TODO: make navbar rounded and centered -->
 <div class="relative px-8">
 	<Navbar class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
 		<NavBrand href="/">
