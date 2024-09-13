@@ -1,10 +1,20 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { Carousel, Gallery, Heading, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
+	import {
+		Carousel,
+		Gallery,
+		Heading,
+		Li,
+		List,
+		ListPlaceholder,
+		P,
+		Span,
+		Marquee
+	} from 'flowbite-svelte';
 	import AccordionCategory from '$lib/AccordionCategory.svelte';
 	import { BadgeCheckOutline } from 'flowbite-svelte-icons';
 	import Slide from 'flowbite-svelte/Slide.svelte';
@@ -23,21 +33,35 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 <div>
-
-<Gallery class="gap-4 grid-cols-3 " items={images} let:item style={{ minHeight: '100vh', maxHeight: '100vh' }}>
-	<div class="rounded-md">
-	<!-- <div class="rounded-md ring-1 ring-green-600 dark:ring-red-400 p-1"> -->
-		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md" />
-		<!-- <img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:rounded-3xl hover:shadow-3xl hover:transition" /> -->
-	</div>
-</Gallery>
+	<Gallery
+		class="grid-cols-3 gap-4 "
+		items={images}
+		let:item
+		style={{ minHeight: '100vh', maxHeight: '100vh' }}
+	>
+		<div class="rounded-md">
+			<!-- <div class="rounded-md ring-1 ring-green-600 dark:ring-red-400 p-1"> -->
+			<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md" />
+			<!-- <img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:rounded-3xl hover:shadow-3xl hover:transition" /> -->
+		</div>
+	</Gallery>
 </div>
-<div class="pt-4 pb-4" style="max-w-7xl">
+<div class="pb-4 pt-4 max-h-4xl">
 	<Carousel {images} duration="3000" />
-  </div>
+</div>
 <!-- <hr class="solid" />
 <h1>Hakkimizda</h1>
 <hr class="solid" /> -->
+
+<!-- TODO: marquee not good in phone size -->
+<div>
+	<Marquee speed={1} hoverSpeed={0.5} class="py-16">
+		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-01.webp" />
+		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-06.webp" />
+		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-07.webp" />
+		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-08.webp" />
+	</Marquee>
+</div>
 <div id="big_header">
 	<Heading
 		tag="h1"
@@ -91,9 +115,10 @@
 		</ul>
 	</div>
 </div>
+
 <!-- <p class="text-2xl dark:text-white font-sans hover:bg-green-300">asdasdasdada</p> -->
 <!-- <section> -->
-	<!-- <h1>
+<!-- <h1>
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
@@ -191,8 +216,8 @@
 	}
 
 	.icon {
-		color: green; 
+		color: green;
 		margin-right: 10px;
-		font-size: 1.2em; 
+		font-size: 1.2em;
 	}
 </style>

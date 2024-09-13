@@ -20,7 +20,6 @@
 	}
 </script>
 
-<!-- TODO: fix gradiant button links -->
 <!-- svelte-ignore a11y_missing_attribute -->
 
 <!-- <footer class="space-evenly flex flex-row justify-center"> -->
