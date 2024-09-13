@@ -34,7 +34,7 @@
     </div>
 </div> -->
 
-<ul class="fixed inset-y-1/2 right-0 z-20 flex flex-col justify-center">
+<ul class="fixed inset-y-1/2 right-2 z-20 flex flex-col justify-center">
 	<li>
 		<a
 			href={company_details?.socials[0]?.facebook}
