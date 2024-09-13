@@ -22,13 +22,16 @@
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+<div>
 
-<Gallery class="gap-4 grid-cols-3 " items={images} let:item>
+<Gallery class="gap-4 grid-cols-3 " items={images} let:item style={{ minHeight: '100vh', maxHeight: '100vh' }}>
 	<div class="rounded-md">
 	<!-- <div class="rounded-md ring-1 ring-green-600 dark:ring-red-400 p-1"> -->
-		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:hover:rounded-3xl hover:shadow-3xl" />
+		<img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md" />
+		<!-- <img src={item.src} alt={item.alt} class="h-auto max-w-full rounded-md hover:rounded-3xl hover:shadow-3xl hover:transition" /> -->
 	</div>
 </Gallery>
+</div>
 <div class="pt-4 pb-4" style="max-w-7xl">
 	<Carousel {images} duration="3000" />
   </div>
@@ -89,7 +92,7 @@
 	</div>
 </div>
 <!-- <p class="text-2xl dark:text-white font-sans hover:bg-green-300">asdasdasdada</p> -->
-<section>
+<!-- <section> -->
 	<!-- <h1>
 		<span class="welcome">
 			<picture>
@@ -106,9 +109,16 @@
 	</h2>
 
 	<Counter /> -->
-</section>
+<!-- </section> -->
 
 <style>
+	img {
+		-webkit-transition: all 2s;
+	}
+	img:hover {
+		transition: all 2s;
+		border-radius: 25%;
+	}
 	hr.solid {
 		border-top: 3px solid var(--color-theme-1);
 		padding-bottom: 3rem;
@@ -126,13 +136,13 @@
 		position: relative;
 		display: block;
 	} */
-	section {
+	/* section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
-	}
+	} */
 
 	#big_header {
 		padding: 1px;
@@ -181,8 +191,8 @@
 	}
 
 	.icon {
-		color: green; /* Success ikonunu yeşil yapmak için */
+		color: green; 
 		margin-right: 10px;
-		font-size: 1.2em; /* İkonun boyutunu ayarlamak için */
+		font-size: 1.2em; 
 	}
 </style>

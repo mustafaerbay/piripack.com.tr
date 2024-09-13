@@ -8,8 +8,8 @@
 		SpeedDialButton,
 		GradientButton,
 		FooterIcon
-
 	} from 'flowbite-svelte';
+	// @ts-ignore
 	import { links } from '../app';
 	import Socials from '$lib/Socials.svelte';
 
@@ -21,14 +21,18 @@
 </script>
 
 <!-- TODO: fix gradiant button links -->
-<footer class="flex flex-row justify-center space-evenly">
-	<GradientButton color="green" on:click={openWhatsapp}>Whatsapp +123456789</GradientButton>
-	<GradientButton color="green"></GradientButton>
+<!-- svelte-ignore a11y_missing_attribute -->
+
+<!-- <footer class="space-evenly flex flex-row justify-center"> -->
+<!-- <GradientButton color="green" on:click={openWhatsapp}>Whatsapp +123456789</GradientButton>
+	
+	<button class="flex rounded-full bg-white hover:bold">Save Changes</button>
 	<GradientButton color="green">Iletisim No +90342 321 32 21</GradientButton>
-	<!-- <SpeedDialButton name="Email" href="/contact">
+	<GradientButton color="green">Iletisim No +90342 321 32 21</GradientButton> -->
+<!-- <SpeedDialButton name="Email" href="/contact">
         <ShareNodesSolid class="w-6 h-6" />
     </SpeedDialButton> -->
-</footer>
+<!-- </footer> -->
 <Footer footerType="logo">
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<FooterBrand
@@ -53,17 +57,8 @@
 	</div>
 	<!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
 	<!-- <FooterCopyright href="/" by="PiriPack" aClass="" /> -->
-	
 </Footer>
 
-<style>
-	footer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		/* align-items */
-		padding: 12px;
-		background-color: var(--color-theme-1);
-		color: white;
-	}
-</style>
+
+
+

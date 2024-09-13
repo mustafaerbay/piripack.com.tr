@@ -14,15 +14,19 @@
 	import Contact from '$lib/Contact.svelte';
 	import NavbarSide from '$lib/Navbar_side.svelte';
 	import SocialsSmall from '$lib/Socials_small.svelte';
+	import BannerTop from '$lib/Banner_top.svelte';
 </script>
 
 <!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
 <!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
-<div class="app bg-gradient-to-r from-green-100 to-green-300">
+<div class="app relative bg-gradient-to-r from-green-100 to-green-300">
 	<!-- <Header /> -->
 
 	<Nav></Nav>
 	<SocialsSmall></SocialsSmall>
+	
+		<BannerTop></BannerTop>
+	
 	<main>
 		<slot></slot>
 		<!-- <Contact></Contact> -->
@@ -48,7 +52,21 @@
 		background-size: 360% 360%;
 		animation: gradient-animation 3s ease infinite;
 
-		background-image: linear-gradient(to right top, #24734f, #2f7d58, #3a8661, #44906a, #4e9a73, #5ca57f, #6ab18b, #78bc98, #8eccaa, #a3dbbc, #b9ebcf, #cffbe2);
+		background-image: linear-gradient(
+			to right top,
+			#24734f,
+			#2f7d58,
+			#3a8661,
+			#44906a,
+			#4e9a73,
+			#5ca57f,
+			#6ab18b,
+			#78bc98,
+			#8eccaa,
+			#a3dbbc,
+			#b9ebcf,
+			#cffbe2
+		);
 	}
 	@keyframes gradient-animation {
 		0% {
@@ -67,7 +85,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding-top: 0rem;
+		padding-top: 1rem;
 		padding-left: 4rem;
 		padding-right: 4rem;
 		width: 100%;
