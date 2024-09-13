@@ -13,11 +13,7 @@
 	import { links } from '../app';
 	import Socials from '$lib/Socials.svelte';
 
-	let text = 'asdasdda asdasdasd';
-	function openWhatsapp() {
-		// @ts-ignore
-		window.open('https://wa.me/+901234567890?text=' + text, '_blank').focus();
-	}
+
 </script>
 
 <!-- svelte-ignore a11y_missing_attribute -->
@@ -33,14 +29,14 @@
     </SpeedDialButton> -->
 <!-- </footer> -->
 <Footer footerType="logo">
+	<Socials></Socials>
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<FooterBrand
 			href="https://piripack.com.tr"
 			src="/images/logo.png"
 			alt="PiriPack Logo"
-			name="PiriPack"
+			name=""
 		/>
-		<Socials></Socials>
 
 		<FooterLinkGroup
 			ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"

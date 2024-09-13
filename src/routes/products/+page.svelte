@@ -11,20 +11,25 @@
 		<Category name={item.name} description={item.description} url={item.url}></Category>
 	{/each}
 </div>
-<!-- TODO: fix product list -->
-<div class="relative grid flex flex-col justify-center">
+<!-- TODO: fix product list yazilar alta geciyor-->
+<div class="relative flex grid flex-col justify-center">
 	{#each categories as category, index}
 		{@const catId = category.id}
 		<div class="solid relative m-2 flex flex-col border">
-			<div class="flex flex-col justify-center">
-				<h2 class="m-0">{category.name}</h2>
-				<h2 class="m-0">{catId}</h2>
+			<div class="flex flex-row justify-center">
+				<h2 class="m-1">{category.name}</h2>
+				<h2 class="font-mono">({catId})</h2>
 			</div>
 			<div class="flex-container relative flex">
 				{#each products as product}
 					{#if product.category_id == catId}
-						<div class="flex m-1 h-64 w-64 text-wrap border">
-							<h3 class="">{product.name}</h3>
+						<div class="flex m-1 h-72 w-64 text-wrap border relative">
+							<img class="object-cover w-64 " src={product.image_url} alt={product.description} />
+							
+							<div class="product_name absolute text-wrap bottom-0 h-4 w-64">
+								<p class="absolute font-mono ">{product.name}</p>
+
+							</div>
 						</div>
 					{:else}
 						<div class="m-1">
@@ -37,11 +42,11 @@
 		</div>
 	{/each}
 </div>
-<div class="flex-container relative p-4">
+<div class="flex-container relative p-4 mb-4">
 	{#each products as product}
-		<div id="products" class="p-4">
+		<div id="products" class="p-4 w-64 h-64 m-4">
 			<div>
-				<img src={product.image_url} alt="SvelteKit" />
+				<img class="object-cover w-64 h-64"src={product.image_url} alt={product.description} />
 			</div>
 			<div>
 				<p>{product.name}</p>
@@ -51,6 +56,14 @@
 </div>
 
 <style>
+	img {
+		opacity: 50%;
+		-webkit-transition: all 2s;
+	}
+	img:hover {
+		opacity: 100%;
+		transition: all 2s;
+	}
 	.flex-container {
 		/* float: left; */
 		display: flex;
@@ -70,8 +83,15 @@
 			flex-direction: row;
 		}
 	}
-
-	#products {
+	/* #product_name {
+		display: none;
+	} */
+	#product_name:hover {
+		/* display: content; */
+		/* background-color: black; */
+		/* transition: all 2sn; */
+	}
+	#product_outer {
 		/* box-shadow: 5px 5px 5px 5px; */
 		min-width: 300px;
 		max-width: 300px;
