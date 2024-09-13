@@ -90,7 +90,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli aseptik salca",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-01.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -100,7 +100,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli ketcap ve mayonez",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-02.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -110,7 +110,7 @@ const products = [
         "price": 199.99,
         "stock": 25,
         "description": "Tahin pekmez paketlerinde devrim",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-03.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -140,7 +140,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "Her ebatta ADBLUE paketleri",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-06.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -150,7 +150,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "SIVI JEL ŞEKERLEMELER",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-07.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -160,7 +160,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "MUSLUKLU SIVI AMBALAJLAR",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-08.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -170,7 +170,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KURUYEMİŞ VE TOZ İÇECEKLER	",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-09.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -180,7 +180,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BAHARAT PAKETLERI",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-10.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -190,7 +190,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BAKLIYAT PAKETLERI",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-11.webp",
         "tags": ["10x15", "15x21"]
     },
     {
@@ -200,7 +200,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KURU KAHVE",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-12.webp",
         "tags": ["10x15", "15x21"]
     },
     {
