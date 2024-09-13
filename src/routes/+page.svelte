@@ -76,7 +76,7 @@
 	bir dünya bırakmak olacaktır.</P
 >
 
-<h1>Urun Ozellikleri</h1>
+<h1>Ürün Özellikleri</h1>
 <div id="urun_ozellikleri">
 	<div class="list-container">
 		<ul class="success-list">
