@@ -25,17 +25,16 @@
 	{#each categories as category, index}
 		{@const catId = category.id}
 		<!-- <div class="solid relative m-2 flex flex-col border"> -->
-		<div class="solid relative items-center justify-center border">
+		<div class="solid relative items-center justify-center border mb-2">
 			<div class="flex flex-row justify-center">
-				<h2 class="m-1">{category.name}</h2>
-				<h2 class="font-mono">({catId})</h2>
+				<h2 class="m-1 decoration-4 text-black">{category.name}</h2>
 			</div>
 			<div
 				class="m-2 flex grid grid-cols-1 items-center gap-4 justify-self-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
 			>
 				{#each products as product,i}
 					{#if product.category_id == catId}
-						<Button on:click={alert_2(i)} class="bg-0">
+						<Button on:click={()=>alert_2(i)} class="bg-0">
 							<div class="bg-cyan relative h-72 w-64 items-center text-wrap border">
 								<!-- <div class="relative place-content-stretch place-self-stretch justify-center items-center h-72 w-64 text-wrap border"> -->
 								<img
@@ -57,10 +56,12 @@
 	<Modal title={modal_bind.name} bind:this={modal_bind} bind:open={defaultModal} autoclose outsideclose="true">
 		<div class="">
 			<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-				{modal_bind.description} descrıptıon
+				{modal_bind.description}
+				kisa aciklama kismi
 			</p>
 			<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
 				{modal_bind.long_description}
+				uzun aciklama kismi
 			</p>
 			<div class="flex justify-center">
 				<p>Ürün Özellikleri</p>

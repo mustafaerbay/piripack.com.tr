@@ -28,8 +28,8 @@
         <ShareNodesSolid class="w-6 h-6" />
     </SpeedDialButton> -->
 <!-- </footer> -->
+<Socials></Socials>
 <Footer footerType="logo">
-	<Socials></Socials>
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<FooterBrand
 			href="https://piripack.com.tr"
@@ -39,7 +39,7 @@
 		/>
 
 		<FooterLinkGroup
-			ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
+			ulClass="flex flex-wrap items-center mb-0 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
 		>
 			{#each links as item}
 				<FooterLink href={item.url}>{item.name}</FooterLink>

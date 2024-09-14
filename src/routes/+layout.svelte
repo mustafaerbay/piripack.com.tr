@@ -48,7 +48,7 @@
 		animation: gradient-animation 3s ease infinite; */
 		/* background: linear-gradient(220deg, #612716, #183c07, #777043, #c24c24, #b6d7bb, #86e2cd); */
 		background-size: 360% 360%;
-		animation: gradient-animation 3s ease infinite;
+		animation: gradient-animation 18s ease infinite;
 
 		background-image: linear-gradient(
 			to right top,
