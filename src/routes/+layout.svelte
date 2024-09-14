@@ -24,9 +24,7 @@
 
 	<Nav></Nav>
 	<SocialsSmall></SocialsSmall>
-	
-		<BannerTop></BannerTop>
-	
+	<BannerTop></BannerTop>
 	<main>
 		<slot></slot>
 		<!-- <Contact></Contact> -->
