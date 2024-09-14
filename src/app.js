@@ -91,7 +91,8 @@ const products = [
         "stock": 25,
         "description": "En kaliteli aseptik salca",
         "image_url": "images/foto-01.webp",
-        "tags": ["10x15", "15x21"]
+        "tags": ["10x15", "15x21"],
+        "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
     {
         "id": 102,
@@ -111,7 +112,7 @@ const products = [
         "stock": 25,
         "description": "Tahin pekmez paketlerinde devrim",
         "image_url": "images/foto-03.webp",
-        "tags": ["10x15", "15x21"]
+        "tags": ["10x15", "15x21", "eco friendly"]
     },
     {
         "id": 104,
@@ -121,7 +122,7 @@ const products = [
         "stock": 25,
         "description": "En kaliteli konsantre meyve suyu paketi",
         "image_url": "images/foto-04.webp",
-        "tags": ["10x15", "15x21"]
+        "tags": ["10x15", "15x21" , "temiz urun"]
     },
     {
         "id": 105,

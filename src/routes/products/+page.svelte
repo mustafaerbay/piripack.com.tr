@@ -4,6 +4,12 @@
 	import Category from '$lib/Category.svelte';
 	import { products } from '../../app';
 	import { categories } from '../../app';
+	import { Button, Modal,Badge } from 'flowbite-svelte';
+	let defaultModal = false;
+	function alert_2() {
+		// alert("Hello! I am an alert box!!");
+		defaultModal = true;
+	}
 </script>
 
 <div class="flex-container relative">
@@ -12,41 +18,89 @@
 	{/each}
 </div>
 <!-- TODO: fix product list yazilar alta geciyor-->
-<div class="relative flex grid flex-col justify-center">
+<div class="relative">
+	<!-- <div class="relative flex grid flex-col justify-center"> -->
 	{#each categories as category, index}
 		{@const catId = category.id}
-		<div class="solid relative m-2 flex flex-col border">
+		<!-- <div class="solid relative m-2 flex flex-col border"> -->
+		<div class="solid relative items-center justify-center border">
 			<div class="flex flex-row justify-center">
 				<h2 class="m-1">{category.name}</h2>
 				<h2 class="font-mono">({catId})</h2>
 			</div>
-			<div class="flex-container relative flex">
+			<div
+				class="m-2 flex grid grid-cols-1 items-center gap-4 justify-self-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+			>
 				{#each products as product}
 					{#if product.category_id == catId}
-						<div class="flex m-1 h-72 w-64 text-wrap border relative">
-							<img class="object-cover w-64 " src={product.image_url} alt={product.description} />
-							
-							<div class="product_name absolute text-wrap bottom-0 h-4 w-64">
-								<p class="absolute font-mono ">{product.name}</p>
+						<Button on:click={alert_2} class="bg-0">
+							<div class="bg-cyan relative h-72 w-64 items-center text-wrap border">
+								<!-- <div class="relative place-content-stretch place-self-stretch justify-center items-center h-72 w-64 text-wrap border"> -->
+								<img
+									class="w-64 items-center object-cover"
+									src={product.image_url}
+									alt={product.description}
+								/>
 
+								<div class="product_name absolute bottom-0 h-4 w-64 text-wrap text-center">
+									<p class="absolute font-mono">{product.name}</p>
+								</div>
 							</div>
-						</div>
-					{:else}
-						<div class="m-1">
-							<!-- <h3>no product exist in this category</h3>
-							<h3>{product.id}</h3> -->
-						</div>
+						</Button>
+						<Modal title={product.name} bind:open={defaultModal} autoclose outsideclose=true>
+							<div class="">
+								<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+									{product.description} descrıptıon
+								</p>
+								<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+									{product.long_description}
+								</p>
+								<div class="flex justify-center">
+									<p>Ürün Özellikleri</p>
+								</div>
+								<div class="flex grid grid-cols-1 xl:grid-cols-3 divide-x-4 divide-solid divide-lime-500 p-1">
+									<div>
+										<p>
+											Ebatlar
+										</p>
+										<ul>
+											{#each product.tags as item}
+											<li>
+												<Badge color="green">{item}</Badge>
+												<!-- {item} -->
+											</li>
+											{/each}
+										</ul>
+									</div>
+									<div>
+										<li><span class="icon">&#10004;</span>PET/PETMET/PE</li>
+										<li><span class="icon">&#10004;</span>PET/ALU/PE</li>
+										<li><span class="icon">&#10004;</span>PET/CPP</li>
+										<li><span class="icon">&#10004;</span>PE/EVOH/PE</li>
+										<li><span class="icon">&#10004;</span>PA/PE</li>
+										ikinci div
+									</div>
+									<div>
+										ucuncu div
+									</div>
+								</div>
+							</div>
+							<!-- <svelte:fragment slot="footer">
+								<Button on:click={() => alert('Handle "success"')}>I accept</Button>
+								<Button color="alternative">Decline</Button>
+							</svelte:fragment> -->
+						</Modal>
 					{/if}
 				{/each}
 			</div>
 		</div>
 	{/each}
 </div>
-<div class="flex-container relative p-4 mb-4">
+<div class="flex-container relative mb-4 p-4">
 	{#each products as product}
-		<div id="products" class="p-4 w-64 h-64 m-4">
+		<div id="products" class="m-4 h-64 w-64 p-4">
 			<div>
-				<img class="object-cover w-64 h-64"src={product.image_url} alt={product.description} />
+				<img class="h-64 w-64 object-cover" src={product.image_url} alt={product.description} />
 			</div>
 			<div>
 				<p>{product.name}</p>
@@ -73,7 +127,7 @@
 		display: flex;
 		/* flex-direction: column; */
 		justify-content: center;
-		align-items: center;
+		/* align-items: center; */
 		padding-bottom: 1rem;
 		/* justify-content: space-between; */
 		/* padding-top: 3rem; */
