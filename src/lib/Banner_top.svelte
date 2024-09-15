@@ -18,7 +18,7 @@
 	<div class="ml-2 flex justify-center rounded-md bg-white">
 		<button class="mr-2 flex items-center space-x-2 p-2">
 			<img src="logo.png" class="h-6 w-6 sm:block" />
-			<span class="text-xs">{company_details.email}</span>
+			<span class="text-xs"><a href="mailto:{company_details.email}">{company_details.email}</a></span>
 		</button>
 	</div>
 	<div class="ml-2 flex justify-center rounded-md bg-white">
