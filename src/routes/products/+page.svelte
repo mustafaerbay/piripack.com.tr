@@ -6,11 +6,11 @@
 	import { categories } from '../../app';
 	import { Button, Modal, Badge } from 'flowbite-svelte';
 	let defaultModal = false;
-	let modal_bind = ""
+	let modal_bind = '';
 	function alert_2(index) {
 		// alert("Hello! I am an alert box!!");
 		defaultModal = true;
-		modal_bind = products[index]
+		modal_bind = products[index];
 	}
 </script>
 
@@ -23,19 +23,31 @@
 <div class="relative">
 	<!-- <div class="relative flex grid flex-col justify-center"> -->
 	{#each categories as category, index}
-		{@const catId = category.id}
-		<!-- <div class="solid relative m-2 flex flex-col border"> -->
-		<div class="solid relative items-center justify-center border mb-2">
+		{@const catId = category.id}		
+		<div class="solid relative mb-4 items-center justify-center border {catId === 1 ? 'bg-gradient-to-r from-green-300 to-green-100' : catId === 2 ? 'bg-gradient-to-l from-green-300 to-green-100' : catId === 3 ? 'bg-gradient-to-r from-green-300 to-green-100' : 'bg-gradient-to-l from-green-300 to-green-100'}">
 			<div class="flex flex-row justify-center">
-				<h2 class="m-1 decoration-4 text-black">{category.name}</h2>
+				<!-- <h2 class="m-1 text-black decoration-4">{category.name}</h2> -->
+				<div class=" text-xl md:text-5xl font-extrabold mt-4 ...">
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+						{category.name}
+					</span>
+				  </div>
+			</div>
+			<div class="flex flex-row justify-center text-xl md:text-5xl">
+				<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 uppercase">
+					Kategori kodu -- {category.id}
+				</span>
+				<!-- <h2 class="m-1 uppercase text-black decoration-4">Kategori kodu -- {category.id}</h2> -->
 			</div>
 			<div
 				class="m-2 flex grid grid-cols-1 items-center gap-4 justify-self-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
 			>
-				{#each products as product,i}
+				{#each products as product, i}
 					{#if product.category_id == catId}
-						<Button on:click={()=>alert_2(i)} class="bg-0">
-							<div class="bg-cyan relative h-72 w-64 items-center text-wrap border">
+						<Button on:click={() => alert_2(i)} class="bg-0">
+							<div
+								class="bg-cyan relative h-72 w-64 items-center text-balance border text-black hover:text-white"
+							>
 								<!-- <div class="relative place-content-stretch place-self-stretch justify-center items-center h-72 w-64 text-wrap border"> -->
 								<img
 									class="w-64 items-center object-cover"
@@ -43,9 +55,10 @@
 									alt={product.description}
 								/>
 
-								<div class="product_name absolute bottom-0 h-4 w-64 text-wrap text-center">
+								<div class="product_name absolute bottom-0 h-4 w-64 text-balance text-center">
 									<p class="absolute font-mono">{product.name}</p>
 								</div>
+								<p class="absolute font-mono">{product.id}</p>
 							</div>
 						</Button>
 					{/if}
@@ -53,7 +66,13 @@
 			</div>
 		</div>
 	{/each}
-	<Modal title={modal_bind.name} bind:this={modal_bind} bind:open={defaultModal} autoclose outsideclose="true">
+	<Modal
+		title={modal_bind.name}
+		bind:this={modal_bind}
+		bind:open={defaultModal}
+		autoclose
+		outsideclose="true"
+	>
 		<div class="">
 			<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
 				{modal_bind.description}
@@ -63,14 +82,12 @@
 				{modal_bind.long_description}
 				uzun aciklama kismi
 			</p>
-			<div class="flex justify-center">
+			<div class="flex justify-center uppercase">
 				<p>Ürün Özellikleri</p>
 			</div>
-			<div
-				class="flex grid grid-cols-1 divide-x-4 divide-solid divide-lime-500 p-1 xl:grid-cols-3"
-			>
+			<div class="flex grid grid-cols-2 divide-x-4 divide-solid divide-lime-500 p-1 xl:grid-cols-3">
 				<div>
-					<p>Ebatlar</p>
+					<p class="uppercase">Ebatlar</p>
 					<ul>
 						{#each modal_bind.tags as item}
 							<li>
@@ -88,7 +105,13 @@
 					<li><span class="icon">&#10004;</span>PA/PE</li>
 					ikinci div
 				</div>
-				<div>ucuncu div</div>
+				<div>
+					<p><span class="icon">&#10004;</span> PET/PETMET/PE</p>
+					<p><span class="icon">&#10004;</span> PET/ALU/PE</p>
+					<p><span class="icon">&#10004;</span> PET/CPP</p>
+					<p><span class="icon">&#10004;</span> PE/EVOH/PE</p>
+					<p><span class="icon">&#10004;</span> PA/PE</p>
+				</div>
 			</div>
 		</div>
 		<!-- <svelte:fragment slot="footer">
@@ -97,7 +120,7 @@
 		</svelte:fragment> -->
 	</Modal>
 </div>
-<div class="flex-container relative mb-4 p-4">
+<!-- <div class="flex-container relative mb-4 p-4">
 	{#each products as product}
 		<div id="products" class="m-4 h-64 w-64 p-4">
 			<div>
@@ -108,11 +131,11 @@
 			</div>
 		</div>
 	{/each}
-</div>
+</div> -->
 
 <style>
 	img {
-		opacity: 50%;
+		opacity: 75%;
 		-webkit-transition: all 2s;
 	}
 	img:hover {
