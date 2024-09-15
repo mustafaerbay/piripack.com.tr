@@ -5,14 +5,7 @@
 	// @ts-ignore
 	import Nav from './Nav.svelte';
 
-	import { onMount } from 'svelte';
-	import SpeedDialButton from '$lib/SpeedDialButton.svelte';
 	import Foot from './Foot.svelte';
-	import { IconSolid } from 'flowbite-svelte-icons';
-	import Maps from '$lib/Maps.svelte';
-	import CustomContact from '$lib/CustomContact.svelte';
-	import Contact from '$lib/Contact.svelte';
-	import NavbarSide from '$lib/Navbar_side.svelte';
 	import SocialsSmall from '$lib/Socials_small.svelte';
 	import BannerTop from '$lib/Banner_top.svelte';
 </script>
@@ -21,7 +14,7 @@
 <!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
 <div class="app relative bg-gradient-to-r from-green-100 to-green-300">
 	<!-- <Header /> -->
-
+	
 	<Nav></Nav>
 	<SocialsSmall></SocialsSmall>
 	<BannerTop></BannerTop>

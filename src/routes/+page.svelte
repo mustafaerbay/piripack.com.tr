@@ -54,7 +54,7 @@
 <hr class="solid" /> -->
 
 <!-- TODO: marquee not good in phone size -->
-<div>
+<div class="invisible md:visible lg:visible xl:visible ">
 	<Marquee speed={1} hoverSpeed={0.5} class="py-16">
 		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-01.webp" />
 		<img class="h-64 w-64" alt="flowbite-svelte icon logo" src="images/foto-06.webp" />
