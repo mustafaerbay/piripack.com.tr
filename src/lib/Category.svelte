@@ -30,8 +30,7 @@
 		<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
 			{description}
 		</p>
-		<div class="relative">
-			<!-- <Badge rounded color="green">Green</Badge> -->
+		<!-- <div class="relative">
 			<a
 				id="bottom_button"
 				href="/contact"
@@ -54,7 +53,7 @@
 					/>
 				</svg>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 

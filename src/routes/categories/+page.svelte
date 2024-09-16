@@ -4,6 +4,10 @@
 	import { categories } from '../../app';
 </script>
 
+<svelte:head>
+	<title>Kategoriler</title>
+	<meta name="description" content="Piri Pack Ambalaj | Kategoriler" />
+</svelte:head>
 <div class="flex-container relative">
 	{#each categories as item}
 		<Category name={item.name} description={item.description} url={item.url}></Category>

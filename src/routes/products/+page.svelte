@@ -28,7 +28,7 @@
 			<div class="flex flex-row justify-center">
 				<!-- <h2 class="m-1 text-black decoration-4">{category.name}</h2> -->
 				<div class=" text-xl md:text-5xl font-extrabold mt-4 ...">
-					<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-green-300">
 						{category.name}
 					</span>
 				  </div>
