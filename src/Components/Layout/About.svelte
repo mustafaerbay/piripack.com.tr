@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import { Col, Container, Row } from "@sveltestrap/sveltestrap";
 </script>
 <section class="section" id="about">
@@ -18,10 +20,10 @@
                     <p class="text-muted mt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                     <div>
                         <ul class="mb-0 about-social list-inline mt-4">
-                            <li class="list-inline-item"><a href="#!"><i class="mdi mdi-dribbble"></i></a></li>
-                            <li class="list-inline-item"><a href="#!"><i class="mdi mdi-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#!"><i class="mdi mdi-linkedin"></i></a></li>
-                            <li class="list-inline-item"><a href="#!"><i class="mdi mdi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-dribbble"></i></a></li>
+                            <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>

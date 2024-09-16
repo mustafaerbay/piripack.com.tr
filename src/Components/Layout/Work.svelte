@@ -55,11 +55,11 @@
         </Row>
         <div class="row mt-5 ">
             <ul class="col list-unstyled list-inline mb-0 text-uppercase work_menu" id="menu-filter">
-                <li class="list-inline-item"><a on:click={()=>activeLink = "all"} class={`${activeLink=== "all" ? "active" : ""}`} href="#!">All</a></li>
-                <li class="list-inline-item"><a on:click={()=>activeLink = "seo"} class={`${activeLink=== "seo" ? "active" : ""}`} href="#!">Seo</a></li>
-                <li class="list-inline-item"><a on:click={()=>activeLink = "webdesign"} class={`${activeLink=== "webdesign" ? "active" : ""}`} href="#!">Webdesign</a></li>
-                <li class="list-inline-item"><a on:click={()=>activeLink = "work"} class={`${activeLink=== "work" ? "active" : ""}`} href="#!">Work</a></li>
-                <li class="list-inline-item"><a on:click={()=>activeLink = "wordpress"} class={`${activeLink=== "wordpress" ? "active" : ""}`} href="#!">Wordpress</a></li>
+                <li class="list-inline-item"><a on:click={()=>activeLink = "all"} class={`${activeLink=== "all" ? "active" : ""}`} href="#contact">All</a></li>
+                <li class="list-inline-item"><a on:click={()=>activeLink = "seo"} class={`${activeLink=== "seo" ? "active" : ""}`} href="#contact">Seo</a></li>
+                <li class="list-inline-item"><a on:click={()=>activeLink = "webdesign"} class={`${activeLink=== "webdesign" ? "active" : ""}`} href="#contact">Webdesign</a></li>
+                <li class="list-inline-item"><a on:click={()=>activeLink = "work"} class={`${activeLink=== "work" ? "active" : ""}`} href="#contact">Work</a></li>
+                <li class="list-inline-item"><a on:click={()=>activeLink = "wordpress"} class={`${activeLink=== "wordpress" ? "active" : ""}`} href="#contact">Wordpress</a></li>
             </ul>
         </div>
     </div>

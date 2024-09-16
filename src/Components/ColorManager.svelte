@@ -40,27 +40,27 @@
         <h3 class="fw-bold text-center text-body">Select your color</h3>
         <ul class="pattern">
             <li>
-                <a class="color1 active" data-color="red" href="#!" on:click={() => setTheme("red")}></a>
+                <a class="color1 active" data-color="red" href="#contact" on:click={() => setTheme("red")}></a>
             </li>
             <li>
-                <a class="color2" href="#!" data-color="sky" on:click={() => setTheme("blue")}></a>
+                <a class="color2" href="#contact" data-color="sky" on:click={() => setTheme("blue")}></a>
             </li>
             <li>
-                <a class="color3" href="#!" data-color="green" on:click={() => setTheme("green")}></a>
+                <a class="color3" href="#contact" data-color="green" on:click={() => setTheme("green")}></a>
             </li>
             <li>
-                <a class="color4" href="#!" data-color="red" on:click={() => setTheme("purple")}></a>
+                <a class="color4" href="#contact" data-color="red" on:click={() => setTheme("purple")}></a>
             </li>
             <li>
-                <a class="color5" href="#!" data-color="skyblue" on:click={() => setTheme("skyblue")}></a>
+                <a class="color5" href="#contact" data-color="skyblue" on:click={() => setTheme("skyblue")}></a>
             </li>
             <li>
-                <a class="color6" href="#!" data-color="yellow" on:click={() => setTheme("yellow")}></a>
+                <a class="color6" href="#contact" data-color="yellow" on:click={() => setTheme("yellow")}></a>
             </li>
         </ul>
     </div>
     <div class="bottom" role="button" tabindex="0" on:click={togleColorSwitcher} on:keydown={togleColorSwitcher}>
-        <a href="#!" class="settings"><i class="mdi mdi-palette"></i></a>
+        <a href="#contact" class="settings"><i class="mdi mdi-palette"></i></a>
     </div>
 </div>
 

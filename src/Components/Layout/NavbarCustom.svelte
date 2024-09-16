@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import {
     Collapse,
     NavbarToggler,
@@ -54,7 +56,7 @@
 
 <nav class={`navbar navbar-expand-lg custom-nav navbar-light fixed-top ${isSticky ? 'stickyadd' : ''}`}>
     <Container >
-        <a class="navbar-brand pt-0 logo" href="#!">
+        <a class="navbar-brand pt-0 logo" href="#contact">
             <img src="assets/images/logo.png" alt="" class="img-fluid logo-light">
             <img src="assets/images/logo-dark.png" alt="" class="img-fluid logo-dark">
         </a>
