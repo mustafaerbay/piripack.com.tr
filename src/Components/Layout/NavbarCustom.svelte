@@ -57,8 +57,8 @@
 <nav class={`navbar navbar-expand-lg custom-nav navbar-light fixed-top ${isSticky ? 'stickyadd' : ''}`}>
     <Container >
         <a class="navbar-brand pt-0 logo" href="#contact">
-            <img src="assets/images/logo.png" alt="" class="img-fluid logo-light">
-            <img src="assets/images/logo-dark.png" alt="" class="img-fluid logo-dark">
+            <img src="images/logo.png" alt="" class="img-fluid logo-light">
+            <img src="images/logo.png" alt="" class="img-fluid logo-dark">
         </a>
         <NavbarToggler type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="mdi mdi-menu"></span>

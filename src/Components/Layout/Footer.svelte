@@ -9,11 +9,11 @@
                         <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-pinterest"></i></a></li>
                         <li class="list-inline-item"><a href="#contact"><i class="mdi mdi-twitter"></i></a></li>
                     </ul>
-                    <p class="copyright_content mb-0 mt-3">
+                    <!-- <p class="copyright_content mb-0 mt-3">
                         <script>document.write(new Date().getFullYear())</script>
                         &copy; Kerri. Design by
                         <a class="copyright_content" target="_blank" href="https://themeforest.net/user/srbthemes">SRBThemes.</a>
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <script>
 	import { onDestroy, onMount } from "svelte";
     import {fade} from "svelte/transition";
-    const textItems = ["Kerri Deo Rao.", "A Graphic Designer.", "A Photographer."];
+    const textItems = ["Özveri", "Kalite", "Güven"];
     let currentIndex = 0;
     let interval;
     onMount(() => {

@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="text-center">
-                    <h2 class="fw-bold">I Am Available For Freelancer.</h2>
+                    <h2 class="fw-bold">Fason üretim için</h2>
                 </div>
                 <div class="text-center mt-4">
-                    <a href="#contact" class="btn btn-primary">Hire Me!</a>
+                    <a href="#contact" class="btn btn-primary">Iletişime Geç</a>
                 </div>
             </div>
         </div>

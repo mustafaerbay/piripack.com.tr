@@ -18,7 +18,7 @@
                         <i class="mbri-mobile2 text-primary h1"></i>
                     </div>
                     <div class="mt-3">
-                        <h5 class="mb-0 contact_detail-title fw-bold">Call Us On</h5>
+                        <h5 class="mb-0 contact_detail-title fw-bold">Telefon</h5>
                         <p class="text-muted">{company_details.phone}</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                         <i class="mbri-letter text-primary h1"></i>
                     </div>
                     <div class="mt-3">
-                        <h5 class="mb-0 contact_detail-title fw-bold">Email Us At</h5>
+                        <h5 class="mb-0 contact_detail-title fw-bold">Email</h5>
                         <p class="text-muted">{company_details.email}</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         <i class="mbri-pin text-primary h1"></i>
                     </div>
                     <div class="mt-3">
-                        <h5 class="mb-0 contact_detail-title fw-bold">Visit Office</h5>
+                        <h5 class="mb-0 contact_detail-title fw-bold">Adres</h5>
                         <p class="text-muted">{company_details.address}</p>
                     </div>
                 </div>
