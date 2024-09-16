@@ -1,98 +1,70 @@
 <script>
-	// @ts-ignore
-	import Header from './Header.svelte';
-	import '../app.css';
-	// @ts-ignore
-	import Nav from './Nav.svelte';
-
-	import Foot from './Foot.svelte';
-	import SocialsSmall from '$lib/Socials_small.svelte';
-	import BannerTop from '$lib/Banner_top.svelte';
+    import { company_details } from '../app';
+	import NavbarCustom from '../Components/Layout/NavbarCustom.svelte';
+	import About from '../Components/Layout/About.svelte';
+	import Services from '../Components/Layout/Services.svelte';
+	import Sta from '../Components/Layout/Sta.svelte';
+	import Client from '../Components/Layout/Client.svelte';
+    import Blog from '../Components/Layout/Blog.svelte';
+    import Contact from '../Components/Layout/Contact.svelte';
+    import Footer from '../Components/Layout/Footer.svelte';
+    import Work from '../Components/Layout/Work.svelte';
+    import Settings from '../Components/Layout/Settings.svelte';
+    import Loader from '../Components/Layout/Loader.svelte';
+	import ContactFormSidabar from '$lib/ContactForm_sidabar.svelte';
 </script>
 
-<!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
-<!-- <div class="app bg-repeat" style="background-image: url('/images/logo.png')"> -->
-<div class="app relative bg-gradient-to-r from-green-100 to-green-300">
-	<!-- <Header /> -->
-	
-	<Nav></Nav>
-	<SocialsSmall></SocialsSmall>
-	<BannerTop></BannerTop>
-	<main>
-		<slot></slot>
-		<!-- <Contact></Contact> -->
-		<!-- <Maps></Maps> -->
-		<!-- <CustomContact></CustomContact> -->
-	</main>
-	<!-- <NavbarSide></NavbarSide> -->
-	<!-- <SpeedDialButton></SpeedDialButton> -->
+<svelte:head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
 
-	<Foot></Foot>
-</div>
+    <!-- Animate Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    
+    <!-- Mobirise icons Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/mobiriseicons.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</svelte:head>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-		padding-top: 6rem;
-		/* background: linear-gradient(300deg, #24734f, #7abb38, white);
-		background-size: 180% 180%;
-		animation: gradient-animation 3s ease infinite; */
-		/* background: linear-gradient(220deg, #612716, #183c07, #777043, #c24c24, #b6d7bb, #86e2cd); */
-		background-size: 360% 360%;
-		animation: gradient-animation 18s ease infinite;
+    <!-- Loader -->
+    <!-- <Loader/> -->
 
-		background-image: linear-gradient(
-			to right top,
-			#24734f,
-			#2f7d58,
-			#3a8661,
-			#44906a,
-			#4e9a73,
-			#5ca57f,
-			#6ab18b,
-			#78bc98,
-			#8eccaa,
-			#a3dbbc,
-			#b9ebcf,
-			#cffbe2
-		);
-	}
-	@keyframes gradient-animation {
-		0% {
-			background-position: 0% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-		}
-	}
+    <!-- Start Navbar -->
+    <NavbarCustom/>
 
-	main {
-		position: relative;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding-top: 1rem;
-		padding-left: 4rem;
-		padding-right: 4rem;
-		width: 100%;
-		/* max-width: 90rem; */
-		max-width: fit-content;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+    <!-- START HOME & ABOUT-->
+    <slot/>
 
-	/* footer a {
-		font-weight: bold;
-	} */
 
-	/* @media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	} */
-</style>
+    <!-- START SERVICES -->
+    <Services/>
+
+    <!-- START CTA -->
+    <Sta />
+    <!-- <ContactFormSidabar></ContactFormSidabar> -->
+
+    <!-- START CLIENT -->
+    <!-- <Client /> -->
+
+    <!-- START WORK -->
+    <Work/>
+
+    <!-- START BLOG -->
+    <Blog />
+
+
+    <!-- START CONTACT -->
+    <Contact company_details={company_details}/>
+    <!--START FOOTER-->
+    <Footer />
+
+    <!-- SETTINGS -->
+    <Settings/>
+    
+    <style global lang="scss">
+    //@import "$lib/assets/css/style.css";
+    </style>
