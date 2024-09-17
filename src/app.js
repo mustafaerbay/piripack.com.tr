@@ -90,7 +90,7 @@ const categories = [
 const products = [
     {
         "id": 101,
-        "is_highlighted": true,
+        "is_highlighted": false,
         "name": "ASEPTİK SALÇA",
         "category_id": 1,
         "price": 799.99,

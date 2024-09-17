@@ -40,9 +40,11 @@
 
     <!-- START HOME & ABOUT-->
     <slot/>
-
+    
     <!-- START BLOG -->
     <Blog />
+    <!-- START WORK -->
+    <Work/>
     <!-- START SERVICES -->
     <Services/>
 
@@ -52,9 +54,6 @@
 
     <!-- START CLIENT -->
     <!-- <Client /> -->
-
-    <!-- START WORK -->
-    <Work/>
 
 
 

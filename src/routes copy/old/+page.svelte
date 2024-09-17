@@ -29,7 +29,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Piri Pack Ambalaj" />
 </svelte:head>
 <div>
 	<Gallery
