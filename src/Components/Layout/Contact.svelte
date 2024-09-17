@@ -62,7 +62,7 @@
 			<div class="col-lg-12">
 				<div class="form-kerri contact_form">
 					<div id="message"></div>
-					<form method="post" action="php/contact.php" name="contact-form" id="working_form">
+					<form method="post" action="https://formspree.io/f/mzzpqqvb" name="contact-form" id="working_form">
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="form-group mt-2">
@@ -89,7 +89,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<!-- <div class="row">
 							<div class="form-group mt-2">
 								<input
 									type="text"
@@ -99,7 +99,7 @@
 									required
 								/>
 							</div>
-						</div>
+						</div> -->
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="form-group mt-2">
