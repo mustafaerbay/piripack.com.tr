@@ -133,7 +133,7 @@
 				<!-- <div
 					class={`col-lg-4 work_item ${!(work.categories.includes(activeLink) || activeLink == 'all') ? 'hide d-none' : ''}`}
 				> -->
-					<a href="assets/images/works/1.jpg" class="img-zoom">
+					<a href="{product.image_url}" class="img-zoom">
 						<div class="work_box">
 							<div class="work_img">
 								<img
@@ -145,6 +145,7 @@
 							<div class="work_detail">
 								<p class="mb-2">{product.name}</p>
 								<h4 class="mb-0">{product.description}</h4>
+								<p class="mb-2">{product.tags}</p>
 							</div>
 						</div>
 					</a>
