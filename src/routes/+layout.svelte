@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/mobiriseicons.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- <link rel="stylesheet" href="assets/css/app.css"> -->
 </svelte:head>
 
     <!-- Loader -->

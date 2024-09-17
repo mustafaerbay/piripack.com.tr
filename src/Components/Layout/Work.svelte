@@ -71,7 +71,7 @@
 					<a
 						on:click={() => (activeLink = 'all')}
 						class={`${activeLink === 'all' ? 'active' : ''}`}
-						href="#work">All</a
+						href="#!">All</a
 					>
 				</li>
 				<!-- <li class="list-inline-item">
@@ -116,7 +116,7 @@
 						<a
 							on:click={() => cat_opt(Category)}
 							class={`${activeLink === Category.short_name ? 'active' : ''}`}
-							href="#work">{Category.short_name}</a
+							href="#!">{Category.short_name}</a
 						>
 					</li>
 				{/each}
@@ -143,8 +143,8 @@
 								/>
 							</div>
 							<div class="work_detail">
-								<p class="mb-2">Category</p>
-								<h4 class="mb-0">Project Title</h4>
+								<p class="mb-2">{product.name}</p>
+								<h4 class="mb-0">{product.description}</h4>
 							</div>
 						</div>
 					</a>
