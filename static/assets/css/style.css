@@ -1019,7 +1019,7 @@ ul.pattern .color6 {
 }
 
 .header-bg-img {
-  background-image: url(../images/header-bg.jpg);
+  background-image: url("../../images/contact_image.webp");
   position: relative;
   background-size: cover;
   background-position: center center;

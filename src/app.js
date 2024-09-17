@@ -11,6 +11,7 @@ const workHours = [
 const address = 'Sanayi, 60011. Caddesi No:17, 27090 Şehitkamil/Gaziantep';
 
 const company_details = {
+    "address_direction": "https://maps.app.goo.gl/6gqvFzKakxfT1oRXA",
     "address": "Sanayi, 60011. Caddesi No:17, 27090 Şehitkamil/Gaziantep",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6297.371398567429!2d37.34553932072659!3d37.18621339087115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531fd00399b4111%3A0x60fd4aab22d44022!2sPiri%20pack%20ambalaj!5e0!3m2!1sen!2str!4v1725652443750!5m2!1sen!2str",
     "phone": "+901234567890",
@@ -60,24 +61,28 @@ const categories = [
     {
         "id": 1,
         "name": "SIVI DOLUM AMBALAJLARI",
+        "short_name": "SIVI",
         "description": "Latest gadgets and electronics",
         "url": "images/foto-03.webp"
     },
     {
         "id": 2,
         "name": "DOYPACK AMBALAJLAR",
+        "short_name": "DOYPACK",
         "description": "Appliances for your home",
         "url": "images/foto-02.webp"
     },
     {
         "id": 3,
         "name": "ÖZEL  HALI SHRİNK AMBALAJLARI",
+        "short_name": "HALI",
         "description": "Clothing and accessories for all",
         "url": "images/foto-11.webp"
     },
     {
         "id": 4,
         "name": "MARKAMIZA ÖZEL ÜRÜNLER",
+        "short_name": "PIRIPACK",
         "description": "Wide range of books and literature",
         "url": "images/foto-04.webp"
     }
@@ -85,6 +90,7 @@ const categories = [
 const products = [
     {
         "id": 101,
+        "is_highlighted": true,
         "name": "ASEPTİK SALÇA",
         "category_id": 1,
         "price": 799.99,
@@ -96,6 +102,7 @@ const products = [
     },
     {
         "id": 102,
+        "is_highlighted": true,
         "name": "Ketcap Mayonez",
         "category_id": 1,
         "price": 799.99,
@@ -107,6 +114,7 @@ const products = [
     },
     {
         "id": 103,
+        "is_highlighted": true,
         "name": "Tahin Pekmez",
         "category_id": 1,
         "price": 199.99,
@@ -118,6 +126,7 @@ const products = [
     },
     {
         "id": 104,
+        "is_highlighted": true,
         "name": "KONSANTRE MEYVE SULARI",
         "category_id": 1,
         "price": 799.99,
@@ -129,6 +138,7 @@ const products = [
     },
     {
         "id": 105,
+        "is_highlighted": true,
         "name": "ENERJİ İÇEKLERİ",
         "category_id": 1,
         "price": 99.99,
@@ -140,6 +150,7 @@ const products = [
     },
     {
         "id": 106,
+        "is_highlighted": true,
         "name": "ADBLUE",
         "category_id": 1,
         "price": 99.99,
@@ -151,6 +162,7 @@ const products = [
     },
     {
         "id": 107,
+        "is_highlighted": true,
         "name": "SIVI JEL ŞEKERLEMELER",
         "category_id": 1,
         "price": 99.99,
@@ -162,6 +174,7 @@ const products = [
     },
     {
         "id": 108,
+        "is_highlighted": false,
         "name": "MUSLUKLU SIVI AMBALAJLAR",
         "category_id": 1,
         "price": 99.99,
@@ -173,6 +186,7 @@ const products = [
     },
     {
         "id": 201,
+        "is_highlighted": false,
         "name": "KURUYEMİŞ VE TOZ İÇECEKLER	",
         "category_id": 2,
         "price": 99.99,
@@ -184,6 +198,7 @@ const products = [
     },
     {
         "id": 202,
+        "is_highlighted": false,
         "name": "BAHARAT",
         "category_id": 2,
         "price": 99.99,
@@ -195,6 +210,7 @@ const products = [
     },
     {
         "id": 203,
+        "is_highlighted": false,
         "name": "BAKLIYAT",
         "category_id": 2,
         "price": 99.99,
@@ -206,6 +222,7 @@ const products = [
     },
     {
         "id": 204,
+        "is_highlighted": false,
         "name": "KURUKAHVE",
         "category_id": 2,
         "price": 99.99,
@@ -217,6 +234,7 @@ const products = [
     },
     {
         "id": 205,
+        "is_highlighted": false,
         "name": "CAY",
         "category_id": 2,
         "price": 99.99,
@@ -228,6 +246,7 @@ const products = [
     },
     {
         "id": 301,
+        "is_highlighted": false,
         "name": "HALI SHRINK",
         "category_id": 3,
         "price": 99.99,
@@ -239,6 +258,7 @@ const products = [
     },
     {
         "id": 401,
+        "is_highlighted": false,
         "name": "ÇÖP TORBALARI",
         "category_id": 4,
         "price": 99.99,
@@ -250,6 +270,7 @@ const products = [
     },
     {
         "id": 402,
+        "is_highlighted": false,
         "name": "BUZDOLABI POŞETLERİ",
         "category_id": 4,
         "price": 99.99,
@@ -261,6 +282,7 @@ const products = [
     },
     {
         "id": 403,
+        "is_highlighted": false,
         "name": "ZİPLİ FERMUARLI",
         "category_id": 4,
         "price": 99.99,
@@ -272,6 +294,7 @@ const products = [
     },
     {
         "id": 404,
+        "is_highlighted": false,
         "name": "KİLİTLİ SAKLAMA POŞETLERİ",
         "category_id": 4,
         "price": 99.99,
@@ -283,6 +306,7 @@ const products = [
     },
     {
         "id": 405,
+        "is_highlighted": false,
         "name": "ÇOK AMAÇLI VAKUMLU",
         "category_id": 4,
         "price": 99.99,
@@ -294,6 +318,7 @@ const products = [
     },
     {
         "id": 404,
+        "is_highlighted": false,
         "name": "ÜÇGEN KREMŞANTİ POŞETİ",
         "category_id": 4,
         "price": 99.99,
@@ -304,4 +329,4 @@ const products = [
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
 ]
-export { phone, email, whatsapp, workHours, mapUrl, address, categories, products, company_details, links }
+export { phone, email, whatsapp, workHours, mapUrl, address, address_direction, categories, products, company_details, links }

@@ -1,6 +1,9 @@
 <script>
+// @ts-nocheck
+
 	import { Row } from '@sveltestrap/sveltestrap';
-	import { products , categories } from '../../app';
+	import { products, categories } from '../../app';
+	import Category from '$lib/Category.svelte';
 	const works = [
 		{
 			categories: ['webdesign', 'wordpress'],
@@ -40,6 +43,13 @@
 		}
 	];
 	let activeLink = 'all';
+	let selected_cat;
+	let selected_category_id = ['1', '2', '3', '4'];
+
+	function cat_opt(category) {
+		activeLink = category.short_name
+		selected_cat = category.id
+	}
 </script>
 
 <section class="section text-center" id="portfolio">
@@ -47,7 +57,7 @@
 		<Row class="row justify-content-center">
 			<div class="col-lg-12">
 				<div class="text-center">
-					<h2>Our <span class="fw-bold">Works</span></h2>
+					<h2><span class="fw-bold">URUNLER</span></h2>
 					<p class="text-muted section-subtitle mx-auto mt-3">
 						It is a long established fact that a reader will be of a page when established fact
 						looking at its layout.
@@ -61,51 +71,73 @@
 					<a
 						on:click={() => (activeLink = 'all')}
 						class={`${activeLink === 'all' ? 'active' : ''}`}
-						href="#contact">All</a
+						href="#work">All</a
 					>
 				</li>
-				<li class="list-inline-item">
+				<!-- <li class="list-inline-item">
 					<a
 						on:click={() => (activeLink = 'seo')}
 						class={`${activeLink === 'seo' ? 'active' : ''}`}
-						href="#contact">Seo</a
+						href="#work">Seo</a
 					>
 				</li>
 				<li class="list-inline-item">
 					<a
 						on:click={() => (activeLink = 'webdesign')}
 						class={`${activeLink === 'webdesign' ? 'active' : ''}`}
-						href="#contact">Webdesign</a
+						href="#work">Webdesign</a
 					>
 				</li>
 				<li class="list-inline-item">
 					<a
 						on:click={() => (activeLink = 'work')}
 						class={`${activeLink === 'work' ? 'active' : ''}`}
-						href="#contact">Work</a
+						href="#work">Work</a
 					>
 				</li>
 				<li class="list-inline-item">
 					<a
 						on:click={() => (activeLink = 'wordpress')}
 						class={`${activeLink === 'wordpress' ? 'active' : ''}`}
-						href="#contact">Wordpress</a
+						href="#work">Wordpress</a
 					>
-				</li>
+				</li> -->
+				<!-- {#each categories as Category}
+					<li class="list-inline-item">
+						<a
+							on:click={() => (activeLink = Category.short_name)}
+							class={`${activeLink === Category.short_name ? 'active' : ''}`}
+							href="#work">{Category.short_name}</a
+						>
+					</li>
+				{/each} -->
+				{#each categories as Category}
+					<li class="list-inline-item">
+						<a
+							on:click={() => cat_opt(Category)}
+							class={`${activeLink === Category.short_name ? 'active' : ''}`}
+							href="#work">{Category.short_name}</a
+						>
+					</li>
+				{/each}
 			</ul>
 		</div>
 	</div>
 	<div class="container">
 		<div class="row work-filter mt-4">
-			{#each works as work (work.categories)}
+			{#each products as product }
+			<!-- {#each works as work (work.categories)} -->
 				<div
-					class={`col-lg-4 work_item ${!(work.categories.includes(activeLink) || activeLink == 'all') ? 'hide d-none' : ''}`}
+					class={`col-lg-4 work_item ${!(selected_cat == product.category_id || activeLink == 'all') ? 'hide d-none' : ''}`}
 				>
+				<!-- <div
+					class={`col-lg-4 work_item ${!(work.categories.includes(activeLink) || activeLink == 'all') ? 'hide d-none' : ''}`}
+				> -->
 					<a href="assets/images/works/1.jpg" class="img-zoom">
 						<div class="work_box">
 							<div class="work_img">
 								<img
-									src="assets/images/works/1.jpg"
+									src="{product.image_url}"
 									class="img-fluid d-block mx-auto rounded"
 									alt="work-img"
 								/>

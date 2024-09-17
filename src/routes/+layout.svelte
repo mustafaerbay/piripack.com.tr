@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-
     import { company_details } from '../app';
 	import NavbarCustom from '../Components/Layout/NavbarCustom.svelte';
 	import About from '../Components/Layout/About.svelte';
@@ -30,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/mobiriseicons.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </svelte:head>
 
     <!-- Loader -->
