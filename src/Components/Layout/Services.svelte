@@ -15,9 +15,9 @@
                         <i class="mbri-growing-chart text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Graphic Design</h5>
+                        <h5 class="mb-0">Reprodüksiyon</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Markanızı Canlandırın: Capcanlı, Kişiselleştirilmiş Ambalaj Çözümlerimizi Keşfedin</p>
                     </div>
                 </div>
             </div>
@@ -27,9 +27,9 @@
                         <i class="mbri-hot-cup text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Unlimited Color</h5>
+                        <h5 class="mb-0">Rotogravür Baskı</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Her Rulo İçin Baskı Mühendisliği</p>
                     </div>
                 </div>
             </div>
@@ -39,9 +39,9 @@
                         <i class="mbri-upload text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Media Marketing</h5>
+                        <h5 class="mb-0">Laminasyon</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Dayanıklılığı Güçlendiriyor, Estetiği Yükseltiyoruz </p>
                     </div>
                 </div>
             </div>
@@ -53,9 +53,9 @@
                         <i class="mbri-layers text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Unlimited Wifi</h5>
+                        <h5 class="mb-0">Dilme</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Kaliteli Baskı Rulo Filmleri ve Doluma Hazır Torbalar Sizi Bekliyor</p>
                     </div>
                 </div>
             </div>
@@ -65,9 +65,9 @@
                         <i class="mbri-website-theme text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Responsive Design</h5>
+                        <h5 class="mb-0">Silindir Tesisi</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Hassas Üretim, Kusursuz Çözümler</p>
                     </div>
                 </div>
             </div>
@@ -77,9 +77,9 @@
                         <i class="mbri-edit text-primary display-4"></i>
                     </div>
                     <div class="mt-4">
-                        <h5 class="mb-0">Easy to customize</h5>
+                        <h5 class="mb-0">Depolama</h5>
                         <div class="services-title-border"></div>
-                        <p class="text-muted mt-3">There are many variations of passages of but the majority have suffered alteration in some form.</p>
+                        <p class="text-muted mt-3">Depolama Optimizasyonu ile Yüksek Verimlilik</p>
                     </div>
                 </div>
             </div>
