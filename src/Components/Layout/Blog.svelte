@@ -4,7 +4,6 @@
 	let highligted_products = [];
 	let all_prod = products;
 
-	function set_highligted_products() {}
 </script>
 
 <section class="section bg-light" id="blog">

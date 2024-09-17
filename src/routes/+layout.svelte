@@ -41,7 +41,8 @@
     <!-- START HOME & ABOUT-->
     <slot/>
 
-
+    <!-- START BLOG -->
+    <Blog />
     <!-- START SERVICES -->
     <Services/>
 
@@ -55,8 +56,7 @@
     <!-- START WORK -->
     <Work/>
 
-    <!-- START BLOG -->
-    <Blog />
+
 
 
     <!-- START CONTACT -->

@@ -18,8 +18,10 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #11161a;
-  --bs-primary: #0d6efd;
-  --bs-primary-rgb: 13, 110, 253 ;
+  /* --bs-primary: #0d6efd; */
+  --bs-primary: #24734f;
+  --bs-primary-rgb: 36, 115, 79 ;
+  /* --bs-primary-rgb: 13, 110, 253 ; */
   --bs-secondary: #6c757d;
   --bs-secondary-rgb: 108, 117, 125 ;
   --bs-success: #6f42c1;
@@ -36,7 +38,8 @@
   --bs-dark-rgb: 17, 22, 26 ;
   --bs-white: #fff;
   --bs-white-rgb: 255, 255, 255 ;
-  --bs-primary-text-emphasis: #0267fb;
+  --bs-primary-text-emphasis: #24734f;
+  /* --bs-primary-text-emphasis: #0267fb; */
   --bs-secondary-text-emphasis: #666f76;
   --bs-success-text-emphasis: #693db9;
   --bs-info-text-emphasis: #0cc0e4;
@@ -986,7 +989,7 @@ ul.pattern .color6 {
 
 /*FOOTER*/
 .footer {
-  padding: 70px 0px;
+  padding: 10px 0px;
   background-color: #212121 !important;
 }
 .footer .footer-alt p {
