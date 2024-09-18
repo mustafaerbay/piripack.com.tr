@@ -1,9 +1,13 @@
+<svelte:head>
+	<title>Kalite</title>
+	<meta name="description" content="Piri Pack Ambalaj | Kalite" />
+</svelte:head>
 <section class="section bg-light" id="services">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="text-center">
-                    <h2>Our <span class="fw-bold">Services</span></h2>
+                    <h2>Our <span class="fw-bold">Kalite</span></h2>
                     <p class="text-muted mx-auto section-subtitle mt-3">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
                 </div>
             </div>

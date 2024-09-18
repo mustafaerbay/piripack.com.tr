@@ -5,6 +5,10 @@
 	import { Gallery, Heading, Img, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Hakkımızda</title>
+	<meta name="description" content="Piri Pack Ambalaj | Hakkımızda" />
+</svelte:head>
 <section class="section" id="about">
 	<Container>
 		<Row class="align-items-center">
@@ -25,14 +29,14 @@
 						PİRİPACK AMBALAJ Gaziantep 5. Organize Sanayi Bölgesinde <Span underline>30000 m2</Span>
 						kapalı alanda üretimini gerçekleştirmekte olup
 					</p>
-					<p class="text-muted mt-2">Sıvı dolum</p>
-					<p class="text-muted mt-2">Konsantre İçecek ambalajları</p>
-					<p class="text-muted mt-2">Şekerleme</p>
-					<p class="text-muted mt-2">Bakliyat</p>
-					<p class="text-muted mt-2">Dondurulmus Gida ve Dondurma</p>
-					<p class="text-muted mt-2">Kuru Kahve</p>
-					<p class="text-muted mt-2">Kuruyemis</p>
-					<p class="text-muted mt-2">Toz icecek</p>
+					<p class="text-muted fw-bold">Sıvı dolum</p>
+					<p class="text-muted fw-bold">Konsantre İçecek ambalajları</p>
+					<p class="text-muted fw-bold">Şekerleme</p>
+					<p class="text-muted fw-bold">Bakliyat</p>
+					<p class="text-muted fw-bold">Dondurulmus Gida ve Dondurma</p>
+					<p class="text-muted fw-bold">Kuru Kahve</p>
+					<p class="text-muted fw-bold">Kuruyemis</p>
+					<p class="text-muted fw-bold">Toz icecek</p>
 					<p class="text-muted mt-4">
 						gibi <b>esnek gıda ambalajları</b>, Hijyen Ürünleri, ve her türlü temizlik gurubu
 						ürünlerinin ambalaj üretimini modern tesislerinde 4.0 Endüstri ile gerçekleştirmektedir.
