@@ -145,6 +145,7 @@
 									src="{product.image_url}"
 									class="img-fluid d-block mx-auto rounded"
 									alt="work-img"
+									style="width: 800; height:533"
 								/>
 							</div>
 							<div class="work_detail">

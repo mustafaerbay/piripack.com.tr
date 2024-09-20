@@ -11,7 +11,7 @@
 		Container
 	} from '@sveltestrap/sveltestrap';
 	import { onMount, onDestroy } from 'svelte';
-
+	import {company_details} from "../../app"
 	let isSticky = false;
 	let activeLink;
 
@@ -112,7 +112,7 @@
 					<a
 						class={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}
 						href="#contact"
-						on:click={() => (activeLink = 'contact')}>İletişim +901234567890</a
+						on:click={() => (activeLink = 'contact')}>İletişim {company_details.phone}</a
 					>
 				</NavItem>
 			</Nav>

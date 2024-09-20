@@ -39,8 +39,10 @@
 						<h5 class="contact_detail-title fw-bold mb-0">Email</h5>
 
 						<a href="mailto:{company_details.email}"
-							><p class="text-muted">{company_details.email}</p></a
-						>
+							><p class="text-muted">{company_details.email}</p>
+						</a	>
+						<p class="text-muted">{company_details.email_2}</p>
+
 					</div>
 				</div>
 			</div>
