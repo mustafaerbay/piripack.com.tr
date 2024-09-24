@@ -52,10 +52,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Ürünlerimiz</title>
-	<meta name="description" content="Piri Pack Ambalaj | Ürünlerimiz" />
-</svelte:head>
 <section class="section text-center" id="portfolio">
 	<div class="container">
 		<Row class="row justify-content-center">

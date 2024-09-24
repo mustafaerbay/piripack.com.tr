@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="stylesheet" href="assets/css/app.css"> -->
 
-    <title>Anasayfa</title>
+    <title>Piripack Ambalaj</title>
 	<meta name="description" content="Piri Pack Ambalaj | Anasayfa" />
 </svelte:head>
 

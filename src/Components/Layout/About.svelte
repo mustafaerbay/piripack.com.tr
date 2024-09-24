@@ -5,10 +5,7 @@
 	import { Gallery, Heading, Img, Li, List, ListPlaceholder, P, Span } from 'flowbite-svelte';
 </script>
 
-<svelte:head>
-	<title>Hakkımızda</title>
-	<meta name="description" content="Piri Pack Ambalaj | Hakkımızda" />
-</svelte:head>
+
 <section class="section" id="about">
 	<Container>
 		<Row class="align-items-center">

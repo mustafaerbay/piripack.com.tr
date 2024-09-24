@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Kalite</title>
-	<meta name="description" content="Piri Pack Ambalaj | Kalite" />
-</svelte:head>
 <section class="section bg-light" id="services">
     <div class="container">
         <div class="row justify-content-center">
