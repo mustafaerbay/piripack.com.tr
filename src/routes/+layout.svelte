@@ -33,6 +33,7 @@
 
     <title>Piripack Ambalaj</title>
 	<meta name="description" content="Piri Pack Ambalaj | Anasayfa" />
+<meta name="google-site-verification" content="r-zyquHGvSLA38XcALbvWo8_e5g9F7R-C8MasfKS8NA" />
 </svelte:head>
 
     <!-- Loader -->
