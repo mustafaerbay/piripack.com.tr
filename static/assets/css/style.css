@@ -302,7 +302,7 @@ h6 {
 }
 
 .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 0, 0, 0.09);
   position: absolute;
   top: 0;
   right: 0;
