@@ -17,7 +17,7 @@
                     <h1 class="header-name text-white text-capitalize mb-0">Piripack 
                         <TypeWriter />
                     </h1>
-                    <p class="text-white mx-auto header-desc mt-4">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+                    <p class="text-white mx-auto header-desc mt-4">asd</p>
                     <div class="mt-4 pt-2">
                         <a href="#contact" class="btn btn-outline-white rounded-pill">İletişime Geç</a>
                     </div>

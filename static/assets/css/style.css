@@ -602,7 +602,7 @@ ul.pattern .color6 {
 
 .btn-outline-primary {
   --bs-btn-color: var(--bs-primary);
-  --bs-btn-bg: var(--bs-primary-text-emphasis);
+  --bs-btn-bg: var(--bs-gray-100);
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: var(--bs-primary);
