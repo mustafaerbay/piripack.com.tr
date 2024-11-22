@@ -1151,6 +1151,8 @@ ul.pattern .color6 {
 
 .custom-nav {
   background-color: transparent;
+  /* background-color: var(--bs-primary); */
+  /* background-color: rgba(6, 247, 111, 0.346); */
   padding: 20px 0px;
   width: 100%;
   border-radius: 0px;
@@ -1159,7 +1161,8 @@ ul.pattern .color6 {
   transition: all 0.5s ease-in-out;
 }
 .custom-nav .navbar-nav li a {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: var(--bs-primary);
   font-size: 15px;
   background-color: transparent !important;
   margin: 0 7px;
