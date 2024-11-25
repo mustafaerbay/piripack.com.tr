@@ -241,7 +241,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "CAY PAKETLERI",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2501.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -253,7 +253,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "HALI SHRINK",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2502.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -265,7 +265,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "HALI SHRINK",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2503.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -277,7 +277,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "BUZDOLABI POŞETLERİ",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2504.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -289,7 +289,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "ZİPLİ FERMUARLI SAKLAMA POŞETLERİ",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2505.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -301,7 +301,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "KİLİTLİ SAKLAMA POŞETLERİ",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2506.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -313,19 +313,19 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "ÇOK AMAÇLI VAKUMLU",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2507.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
     {
-        "id": 404,
+        "id": 406,
         "is_highlighted": false,
         "name": "ÜÇGEN KREMŞANTİ POŞETİ",
         "category_id": 4,
         "price": 99.99,
         "stock": 25,
         "description": "ÜÇGEN KREMŞANTİ POŞETİ",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2508.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
