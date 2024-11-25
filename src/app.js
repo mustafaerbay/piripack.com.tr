@@ -253,7 +253,7 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "HALI SHRINK",
-        "image_url": "images/foto-2502.webp",
+        "image_url": "images/foto-11.webp",
         "tags": ["10x15", "15x21"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
