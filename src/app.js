@@ -133,7 +133,7 @@ const products = [
         "price": 799.99,
         "stock": 25,
         "description": "En kaliteli konsantre meyve suyu paketi",
-        "image_url": "images/foto-04.webp",
+        "image_url": "images/foto-2601.webp",
         "tags": ["10x15", "15x21" , "temiz urun"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
@@ -145,8 +145,8 @@ const products = [
         "price": 99.99,
         "stock": 25,
         "description": "En kaliteli konsantre meyve suyu paketi",
-        "image_url": "images/foto-04.webp",
-        "tags": ["10x15", "15x21"],
+        "image_url": "images/foto-2602.webp",
+        "tags": ["ketcap"],
         "long_description": "The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them."
     },
     {
