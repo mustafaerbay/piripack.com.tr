@@ -1,3 +1,6 @@
+<script>
+	export let company_details;
+</script>
 <footer class="footer bg-light">
     <div class="container">
         <div class="row justify-content-center text-center">
@@ -11,7 +14,10 @@
                     </ul>
                     <p class="copyright_content mb-0 mt-3">
                         <script>document.write(new Date().getFullYear())</script>
-                        &copy; Piripack
+                        &copy; Piripack Ambalaj Gaziantep
+                    </p>
+                    <p class="copyright_content mb-0 mt-3">
+                        {company_details.address}
                     </p>
                 </div>
             </div>

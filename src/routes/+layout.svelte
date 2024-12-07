@@ -33,7 +33,7 @@
 
 	<!-- <link rel="stylesheet" href="assets/css/app.css"> -->
 
-	<title>Piripack Ambalaj</title>
+	<title>Piripack Ambalaj Gaziantep</title>
 	<meta name="description" content="Piri Pack Ambalaj | Anasayfa" />
 	<meta name="google-site-verification" content="r-zyquHGvSLA38XcALbvWo8_e5g9F7R-C8MasfKS8NA" />
 </svelte:head>
@@ -64,7 +64,7 @@
 <!-- START CONTACT -->
 <Contact {company_details} />
 <!--START FOOTER-->
-<Footer />
+<Footer {company_details} />
 
 <!-- SETTINGS -->
 <Settings />
