@@ -140,7 +140,7 @@
 									loading="lazy"
 									src="{product.image_url}"
 									class="img-fluid d-block mx-auto rounded"
-									alt="work-img"
+									alt="{product.description}"
 									style="width: 800; height:533"
 								/>
 							</div>

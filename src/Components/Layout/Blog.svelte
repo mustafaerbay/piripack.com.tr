@@ -25,7 +25,7 @@
 						<div class="img_blog">
 							<img
 								src="{product.image_url}"
-								alt=""
+								alt="{product.description}"
 								class="img-fluid d-block mx-auto rounded"
 							/>
 						</div>
